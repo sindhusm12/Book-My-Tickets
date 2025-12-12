@@ -27,7 +27,7 @@ public class EmailHelper {
 		Context context = new Context();
 		context.setVariable("name", name);
 		context.setVariable("otp", otp);
-		String text = templateEngine.process("email-template.html", context);
+		String text = templateEngine.process("email-templete.html", context);
 		helper.setText(text, true);
 		mailSender.send(mimeMessage);
 		}catch (Exception e) {
